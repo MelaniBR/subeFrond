@@ -1,0 +1,16 @@
+.fondo-sube-info{
+    background-color: white;
+}
+
+.titulo{
+    display: flex;
+    
+}
+.titulo > p {
+    margin: 0;
+  }
+.fecha{
+    text-align: center;
+    justify-content: center;
+  
+}

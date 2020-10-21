@@ -1,0 +1,15 @@
+<div class="fondo-saldo">
+    <button mat-raised-button (click)=irASubePorId()> Volver</button>
+    <div style="text-align: center;">
+
+        <h1>Cuanto queres cargar?</h1>
+        <input type="number" [(ngModel)]="saldo">
+        <br>
+        <div>
+            <br>
+            <button mat-flat-button color="primary" (click)="cargarSaldo()">Cargar Saldo </button>
+        </div>
+
+    </div>
+
+</div>

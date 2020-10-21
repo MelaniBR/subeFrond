@@ -1,0 +1,34 @@
+{
+  "sube": [
+    {
+      "nombreUsuario": "Melani Garcia",
+      "saldo": 1689,
+      "viajes": [
+        {
+          "precio": 50,
+          "fecha": "23 de octubre de 2020 a las 20 hs"
+        },
+        {
+          "precio": 30,
+          "fecha": "21 de octubre de 2020 a las 22 hs"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "id": 0,
+      "nombreUsuario": "Sabrina Garcia",
+      "saldo": 222,
+      "viajes": [
+        {
+          "precio": 20,
+          "fecha": "25 de octubre de 2020 a las 20 hs"
+        },
+        {
+          "precio": 30,
+          "fecha": "25 de octubre de 2020 a las 22 hs"
+        }
+      ]
+    }
+  ]
+}

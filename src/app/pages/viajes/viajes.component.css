@@ -1,0 +1,20 @@
+.fondo-viaje{
+       width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    background-color:rgba(116, 116, 233, 0.322);
+    text-align: center;
+}
+div {
+    display:inline-block;
+    background: #DDD;
+    padding:4px 8px;
+    color: black;
+  }
+  .fecha{
+    float: left;
+  }
+  

@@ -1,0 +1,13 @@
+
+<div>
+    <img src="assets/image/logo.svg"  alt="Haz clic aquí para volver a la página de inicio">
+</div>
+
+
+<div class="mat-toolbar" *ngFor="let sube of subes">
+    <div class="lista-subes" (click)="clickSube(sube.id)">
+        {{sube.nombreUsuario}}
+    </div>
+
+</div>
+
