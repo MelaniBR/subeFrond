@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SubeService } from '../../server/sube.service';
-import { Sube } from '../../../assets/sube-model';
+import { SubeService } from '../../../service/sube.service';
+import { Sube } from '../../../model/sube-model';
 
 
 
@@ -32,14 +32,17 @@ export class SaldoComponent implements OnInit {
 
       });
   }
+  // tslint:disable-next-line:typedef
   fetchSube(id: string) {
-    this.subeService.getSubeById(id).subscribe(sube => { this.sube = sube })
+    this.subeService.getSubeById(id).subscribe(sube => { this.sube = sube; });
   }
+  // tslint:disable-next-line:typedef
   irACargarSaldo() {
     this.router.navigate([this.sube.id, 'cargarSaldo']);
   }
+  // tslint:disable-next-line:typedef
   irAlIncio(){
-    this.router.navigate([""])
+    this.router.navigate(['']);
   }
 }
 

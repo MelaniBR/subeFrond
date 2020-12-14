@@ -1,0 +1,18 @@
+<div class="titulo">
+
+  <div >
+    <table class="table">
+      <tr>
+        <th>Dia</th>
+
+        <th>Precio</th>
+      </tr>
+      <tr *ngFor="let viaje of viajes" >
+        <td>{{viaje.date}}</td>
+
+        <td> ${{viaje.price}}</td>
+
+      </tr>
+    </table>
+  </div>
+</div>

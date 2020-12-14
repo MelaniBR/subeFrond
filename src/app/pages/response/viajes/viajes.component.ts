@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { SubeService } from 'src/app/server/sube.service';
-import { Sube } from 'src/assets/sube-model';
-import { Viaje } from '../../../assets/viaje-model';
+import { Viaje } from '../../../model/viaje-model';
+import {TripsService} from '../../../service/trips.service';
 
 @Component({
   selector: 'app-viajes',
@@ -11,10 +10,10 @@ import { Viaje } from '../../../assets/viaje-model';
 })
 export class ViajesComponent implements OnInit {
 
-  public viajes: Viaje[];
+  viajes: Viaje[];
   constructor(private activatedRoute: ActivatedRoute,
 
-              private subeService: SubeService) { }
+              private tripsService: TripsService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params
@@ -23,8 +22,9 @@ export class ViajesComponent implements OnInit {
         this.fetchSube(id);
       });
   }
+  // tslint:disable-next-line:typedef
   fetchSube(id: string) {
-    this.subeService.getSubeById(id).subscribe(sube => { this.viajes = sube.viajes })
+    this.tripsService.getTripsBySubeId(id).subscribe(viajes => { this.viajes = viajes; });
   }
 
 

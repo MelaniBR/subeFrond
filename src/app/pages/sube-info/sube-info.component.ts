@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Sube } from '../../../assets/sube-model';
+import { Sube } from '../../model/sube-model';
 
 @Component({
   selector: 'app-sube-info',
@@ -8,10 +8,10 @@ import { Sube } from '../../../assets/sube-model';
   styleUrls: ['./sube-info.component.css']
 })
 export class SubeInfoComponent implements OnInit {
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
-  
+
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Sube } from '../../../assets/sube-model';
-import { SubeService } from '../../server/sube.service';
+import { Sube } from '../../model/sube-model';
+import { SubeService } from '../../service/sube.service';
 import {Router} from '@angular/router';
 import { NgModule } from '@angular/core';
 @Component({
@@ -17,15 +17,19 @@ export class SubesComponent implements OnInit {
   ngOnInit(): void {
     this.fetchSube();
   }
-  clickSube(id:string){
-    
-    this.router.navigate([id])
+
+  // tslint:disable-next-line:typedef
+  clickSube(id: number){
+
+    this.router.navigate([id]);
   }
+  // tslint:disable-next-line:typedef
   fetchSube() {
-    this.subeService.getSubes().subscribe(_subes => { this.subes = _subes });
-    
+    // tslint:disable-next-line:variable-name
+    this.subeService.getSubes().subscribe(_subes => { this.subes = _subes; });
+
   }
 }
 
 
-  
+
